@@ -31,7 +31,8 @@ public class Bird extends Animal {
 	// Input - NA
 	// Output - String Text
 	public String sing() {	
-		if(this.getStrSoundText()!= null)
+		if(this.getStrSoundText()!= null &&
+				this.getStrSoundText().length() > 0)
 		{		
 			return this.getStrSoundText();
 		} else {

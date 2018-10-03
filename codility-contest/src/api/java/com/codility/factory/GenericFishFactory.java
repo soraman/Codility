@@ -13,8 +13,7 @@ public class GenericFishFactory<T> extends Fish{
     //constructor to accept type parameter T
     public GenericFishFactory(T param){
     	try {
-    		this.objReff = param;
-    		System.out.println(param.toString());
+    		this.objReff = param;    		
     		Fish obj = new Fish();
     		Field field= AppConstants.class.getDeclaredField(param.toString());
     		field.setAccessible(true);
