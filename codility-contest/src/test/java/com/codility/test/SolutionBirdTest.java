@@ -5,7 +5,7 @@ import org.junit.Test;
 import com.codility.base.modal.AppConstants;
 import com.codility.base.modal.Bird;
 
-public class SolutionMainTest {
+public class SolutionBirdTest {
 	
 	// @Autowired
 	// private Bird bird;

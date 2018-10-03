@@ -1,6 +1,7 @@
 package com.codility.test;
 
 import com.codility.base.modal.Bird;
+import com.codility.base.modal.Fish;
 import com.codility.factory.GenericBirdFactory;
 import com.codility.modal.birds.Duck;
 import com.codility.modal.birds.Parrot;
@@ -9,11 +10,12 @@ import com.codility.modal.items.Phone;
 import com.codility.modal.mammals.Cat;
 import com.codility.modal.mammals.Dog;
 
-public class SolutionMain {
+public class SolutionFish {
 	
 	public static void main(String[] args) {
-		Bird bird = new Bird();
+		Fish bird = new Fish();
 		
+		System.out.println("\n Section-B \n");
 		System.out.println("\n Question-1 \n");
 		System.out.println(bird.walk());
 		System.out.println(bird.fly());
