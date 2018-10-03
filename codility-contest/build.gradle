@@ -26,6 +26,26 @@ sourceSets {
 }
 
 dependencies {
+    
+    //spring
+    compile group: 'org.springframework', name: 'spring-web', version:'4.3.0.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version:'4.3.0.RELEASE'
+    
+    //spring security
+    compile "org.springframework.security:spring-security-core:4.2.3.RELEASE"
+    compile "org.springframework.security:spring-security-config:4.2.3.RELEASE"
+    compile "org.springframework.security:spring-security-web:4.2.3.RELEASE"
+    compile "org.springframework.security:spring-security-ldap:4.2.3.RELEASE"
+    compile "org.springframework.security:spring-security-taglibs:4.2.3.RELEASE"
+        
+    //logger
+    compile group: 'org.slf4j', name: 'slf4j-api', version:'1.6.1'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version:'1.6.1'
+    compile group: 'org.slf4j', name: 'jcl-over-slf4j', version:'1.6.1'
+    
+    //BeanUtils
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.8.3'
+    
     apiCompile 'commons-codec:commons-codec:1.5'
 
     implCompile sourceSets.api.output

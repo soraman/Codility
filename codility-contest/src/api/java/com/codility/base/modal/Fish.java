@@ -2,13 +2,13 @@ package com.codility.base.modal;
 
 public class Fish extends Animal {
 	
-	private String Size;
+	protected String Size;
 	
-	private String Color;
+	protected String Color;
 	
-	private boolean makeJokes;
+	protected boolean makeJokes;
 	
-	private boolean eatOtherFish;
+	protected boolean eatOtherFish;
 	
 	// Constructor
 	public Fish() {
@@ -49,6 +49,19 @@ public class Fish extends Animal {
 
 	public void setEatOtherFish(boolean eatOtherFish) {
 		this.eatOtherFish = eatOtherFish;
+	}
+	
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+	    return new Fish();
+	}
+	
+	@Override
+	public String toString() {
+		
+		return "Fish [ActionWalk=" + this.ActionWalk + ",ActionFly="+ this.ActionFly 
+				+",ActionSwim="+ this.ActionSwim + ",ActionSing="+ this.ActionSing 
+				+"]";
 	}
 	
 }

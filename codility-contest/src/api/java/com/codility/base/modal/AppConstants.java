@@ -18,5 +18,6 @@ public class AppConstants {
 	//  ActionWalk,  ActionFly,  ActionSwim,  ActionSing, strSoundText
 	public static Bird DUCK = new Bird(true,true,true,true,"Quack, quack"); 
 	public static Bird CHICKEN = new Bird(true,false,false,true,"Cluck, cluck");
-
+	public static Insect CATERPILLAR = new Insect(true,false,false,false,"");
+	public static Insect BUTTERFLY = new Insect(true,true,false,false,"");
 }
