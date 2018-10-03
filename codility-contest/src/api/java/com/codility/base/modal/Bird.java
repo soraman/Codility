@@ -4,7 +4,11 @@ public class Bird extends Animal {
 		
 	// Constructor
 	public Bird() {
-		
+		this.ActionWalk = true;
+		this.ActionFly = true;
+		this.ActionSwim = false;
+		this.ActionSing = true;
+		this.strSoundText = "";		
 	}
 	// Constructor
 	public Bird(boolean ActionWalk, boolean ActionFly, boolean ActionSwim, boolean ActionSing, 

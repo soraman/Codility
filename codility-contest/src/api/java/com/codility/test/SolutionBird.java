@@ -21,7 +21,7 @@ public class SolutionBird {
 		System.out.println(bird.sing());		
 	
 		System.out.println("\n Question-2 \n");
-		GenericBirdFactory<String> duck = new GenericBirdFactory<String>("DUCK");
+		GenericBirdFactory<String> duck = new GenericBirdFactory<String>("DUCK");		
 		System.out.println(duck.sing());
 		GenericBirdFactory<String> chicken = new GenericBirdFactory<String>("CHICKEN");
 		System.out.println(chicken.sing());

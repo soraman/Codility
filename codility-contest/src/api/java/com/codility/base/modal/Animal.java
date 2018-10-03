@@ -7,6 +7,7 @@ public class Animal {
 	protected boolean ActionSwim = false; 
 	protected boolean ActionSing = true;
 	protected String strSoundText; 
+	private String name;
 	
 
 	public boolean isActionWalk() {
@@ -56,6 +57,15 @@ public class Animal {
 
 	public void setStrSoundText(String strSoundText) {
 		this.strSoundText = strSoundText;
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
 	}
 
 

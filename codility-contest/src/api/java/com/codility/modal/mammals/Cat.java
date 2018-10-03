@@ -13,7 +13,7 @@ public class Cat  extends Animal {
 		this.ActionWalk = true;
 		this.ActionFly = false;
 		this.ActionSwim = true;
-		this.ActionSing = false;
+		this.ActionSing = true;
 		this.strSoundText = SOUNDTEXT;
 	}
 

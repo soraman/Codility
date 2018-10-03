@@ -18,6 +18,17 @@ public class Fish extends Animal {
 		this.ActionSing = false;
 		this.strSoundText = "";		
 	}
+	
+	
+	// Constructor
+	 public Fish(boolean ActionWalk, boolean ActionFly, boolean ActionSwim, boolean ActionSing, 
+				String strSoundText) {
+			this.ActionWalk = ActionWalk;
+			this.ActionFly = ActionFly;
+			this.ActionSwim = ActionSwim;
+			this.ActionSing = ActionSing;
+			this.strSoundText = strSoundText;
+	 }
 
 	public String getSize() {
 		return Size;

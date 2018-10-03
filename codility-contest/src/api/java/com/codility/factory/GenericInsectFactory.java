@@ -3,7 +3,6 @@ package com.codility.factory;
 import java.lang.reflect.Field;
 
 import com.codility.base.modal.AppConstants;
-import com.codility.base.modal.Bird;
 import com.codility.base.modal.Insect;
 
 public class GenericInsectFactory<T> extends Insect{
@@ -13,8 +12,7 @@ public class GenericInsectFactory<T> extends Insect{
     //constructor to accept type parameter T
     public GenericInsectFactory(T param){
     	try {
-    		this.objReff = param;
-    		System.out.println(param.toString());
+    		this.objReff = param;    		
     		Insect obj = new Insect();
     		Field field= AppConstants.class.getDeclaredField(param.toString());
     		field.setAccessible(true);
@@ -24,13 +22,14 @@ public class GenericInsectFactory<T> extends Insect{
     		this.setActionSwim(obj.isActionSwim());
     		this.setActionSing(obj.isActionSing());
     		this.setStrSoundText(obj.getStrSoundText());
+    		this.setName(param.toString());
     	} catch (Exception e) {
     		e.printStackTrace();
     	}
     }
      
     public T getObjReff(){
-        return this.objReff;
+        return this.objReff;        
     }
      
     //this method prints the holding parameter type
